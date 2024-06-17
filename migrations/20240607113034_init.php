@@ -12,7 +12,7 @@ final class Init extends AbstractMigration
         ->addColumn('username', 'string')
         ->addColumn('password', 'string')
         ->addColumn('created_at', 'datetime')
-        ->addColumn('update_at', 'datetime', ['null' => true])
+        ->addColumn('updated_at', 'datetime', ['null' => true])
         ->addIndex('username', Index::TYPE_UNIQUE)
         ->create();
 
